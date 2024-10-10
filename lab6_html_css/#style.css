@@ -1,0 +1,104 @@
+*{box-sizing: border-box;}
+img{width: 100%; height: 100%;}
+.headertop {
+    border: solid blue 1px;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navleft, .navright {
+    width: 50%;
+    height: 100px;
+    border: red solid 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navleft div:nth-child(1) {
+    padding: 20px;
+}
+.homeiconimg{
+    padding: 20px;
+}
+.navleft div:nth-child(2) {
+    width: 80%;
+    padding: 30px;
+    font-family: "Ariel Black";
+}
+.homeiconimg:hover{
+    opacity: 0.5;
+}
+.homeiconlink{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- Navigation Tabs ----*/
+.navlinks {
+    width: 100%;
+    background-color: lightseagreen;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.links{
+    width: 20%;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.2em;
+    color: darkslateblue;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.links:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* ----- INTRO IMAGE -----*/
+.introimage{
+    width: 1000px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+/*------ MAIN BODY ------*/
+.bodyinfo{
+    width: 1200px;
+    height: 2000px;
+    background-color: white;
+    margin: auto;
+    display: flex;
+}
+.cardcontainer{
+    width: 75%;
+    height: 100%;
+    margin-top: 40px;
+    margin-right: 50px;
+    border-radius: 20px;
+    border: solid green 1px;
+}

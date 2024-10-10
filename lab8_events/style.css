@@ -1,0 +1,25 @@
+*{box-sizing: border-box;}
+.square, .animalsdiv, .numberdiv{
+    width: 200px;
+    height: 200px;
+    border: solid 1px lightblue;
+}
+.animalsdiv{
+    font-size: 3em;
+    padding-top: 60px;
+    text-align: center;
+}
+.numberdiv{
+    font-size: 2em;
+    padding-top: 60px;
+    text-align: center;
+}
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: solid 2px lightblue;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 3em;
+}

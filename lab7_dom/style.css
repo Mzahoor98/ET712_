@@ -1,0 +1,16 @@
+.colorblue{
+    background-color: aqua;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.subtitle{
+    color: green;
+    background-color: lightblue;
+}
+div.divs2{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px;
+}
