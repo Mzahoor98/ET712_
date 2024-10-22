@@ -1,0 +1,6 @@
+*{box-sizing: border-box;}
+.content{
+    width: 3000px;
+    background-color: aqua;
+    padding: 20px;
+}
