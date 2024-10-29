@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 11 by Muhamamd Zahoor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Lab 11, form events by Muhammad Zahoor</h1>
+    <form id="myForm">
+        <label for="username">Enter a username</label>
+        <input type="text" id="username" placeholder="Type username...">
+        <button type="submit" class="btnsubmit">Submit</button>
+    </form>
+    
+    <!--Welcome message after the username is validated-->
+    <div class="greeting">
+        <p>Welcome to form events<span></span></p>
+    </div>
+
+    <h2 class="subtitle">input event, Password validation</h2>
+    <form>
+        <label for="password">Enter a password: </label>
+        <input type="password" id="password" name="password" placeholder="Enter a password...">
+        <p class="passwordmsg">Password must be at least 8+ characters</p>
+        <p id="passworderror"></p>
+        <button type="submit" class="btnlogin" diabled>Login</button>
+    </form>
+    <!--SCRIPT-->
+    <script src="form.js"></script>
+</body>
+</html>
