@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-K Learning Website</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the Pre-K Learning World!</h1>
+        <p>Explore, learn, and have fun!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#numbers">Numbers</a></li>
+            <li><a href="#animals">Animals</a></li>
+            <li><a href="#shapes">Shapes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Colors Section -->
+        <section id="colors">
+            <h2>Learn Colors</h2>
+            <p>Tap on a color to learn more!</p>
+            <div class="color-picker">
+                <button onclick="showColorName('Red')" style="background-color: red;"></button>
+                <button onclick="showColorName('Blue')" style="background-color: blue;"></button>
+                <button onclick="showColorName('Yellow')" style="background-color: yellow;"></button>
+                <p id="colorName"></p>
+            </div>
+        </section>
+
+        <!-- Numbers Section -->
+        <section id="numbers">
+            <h2>Learn Numbers</h2>
+            <p>Practice counting with us!</p>
+            <div class="slideshow">
+                <img id="slideImage" src="image1.jpg" alt="Slideshow Image">
+                <button onclick="prevSlide()">Prev</button>
+                <button onclick="nextSlide()">Next</button>
+            </div>
+        </section>
+
+        <!-- Animals Section -->
+        <section id="animals">
+            <h2>Learn Animals</h2>
+            <p>Discover different animals and their sounds!</p>
+            <button onclick="openModal()">Learn More about Animals</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <p>This is some additional information about animals!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shapes Section -->
+        <section id="shapes">
+            <h2>Learn Shapes</h2>
+            <p>Find and recognize different shapes!</p>
+            <div class="quiz">
+                <p>What shape has 4 equal sides?</p>
+                <button onclick="checkAnswer('square')">Square</button>
+                <button onclick="checkAnswer('triangle')">Triangle</button>
+                <p id="quizFeedback"></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Pre-K Learning Website. All rights reserved.</p>
+        <p>Made for little learners everywhere!</p>
+    </footer>
+
+    <!-- Go to Top Button -->
+    <button id="topBtn" onclick="goToTop()">Top</button>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
