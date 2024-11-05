@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-K Learning World</title>
+    <link rel="stylesheet" href="proj1.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Welcome to the learning playground!</h1>
+        <p>Create, Explore , and have fun!</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#colors">Colors</a></li>
+            <li><a href="#numbers">Numbers</a></li>
+            <li><a href="#animals">Animals</a></li>
+            <li><a href="#shapes">Shapes</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Colors Section -->
+        <section id="colors">
+            <h2>Learn Colors</h2>
+            <p>Tap a color below!</p>
+            <div>
+                <button onclick="showColorName('Red')" style="background-color: red; width: 50px; height: 50px;"></button>
+                <button onclick="showColorName('Blue')" style="background-color: blue; width: 50px; height: 50px;"></button>
+                <button onclick="showColorName('Yellow')" style="background-color: yellow; width: 50px; height: 50px;"></button>
+            </div>
+            <p id="colorName"></p>
+        </section>
+
+        <!-- Numbers Section with Slideshow -->
+        <section id="numbers">
+            <h2>Learn Numbers</h2>
+            <p>Count with us!</p>
+            <div class="slideshow">
+                <img id="slideImage" src="number1.jpg" alt="Number 1">
+                <div class="slideshow-buttons">
+                    <button onclick="prevSlide()">Previous</button>
+                    <button onclick="nextSlide()">Next</button>
+                </div>
+            </div>
+        </section>
+
+    <!-- Animal Quiz Section -->
+    <div id="animal-quiz">
+        <h3>Animal Quiz</h3>
+        <div id="quiz-question">
+            <p id="question-text">Loading question...</p>
+            <div class="quiz-options" id="quiz-options">
+                <!-- Options will be generated here -->
+            </div>
+            <p id="quiz-feedback"></p>
+        </div>
+        <button id="next-question-btn" onclick="loadNextQuestion()">Next Question</button>
+    </div>
+</section>
+
+
+
+        <!-- Shapes Section -->
+<section id="shapes">
+    <h2>Learn Shapes</h2>
+    <p>Click on a shape to learn more about it!</p>
+    <div class="shape-grid">
+        <div class="shape-card" onclick="showShapeInfo('Circle', 'A circle is a round shape with no corners or edges.')">
+            <div class="shape-circle"></div>
+            <p>Circle</p>
+        </div>
+        <div class="shape-card" onclick="showShapeInfo('Square', 'A square has four equal sides and four right angles.')">
+            <div class="shape-square"></div>
+            <p>Square</p>
+        </div>
+        <div class="shape-card" onclick="showShapeInfo('Triangle', 'A triangle has three sides and three corners.')">
+            <div class="shape-triangle"></div>
+            <p>Triangle</p>
+        </div>
+        <div class="shape-card" onclick="showShapeInfo('Rectangle', 'A rectangle has opposite sides that are equal and four right angles.')">
+            <div class="shape-rectangle"></div>
+            <p>Rectangle</p>
+        </div>
+        <!-- Add more shapes as needed -->
+    </div>
+
+    <!-- Modal for Shape Info -->
+    <div id="shapeModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="shapeName">Shape Name</h3>
+            <p id="shapeInfo">Shape information goes here...</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <script src="project1.js"></script>
+</body>
+</html>
