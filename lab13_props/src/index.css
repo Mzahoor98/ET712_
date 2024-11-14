@@ -12,21 +12,17 @@ code {
     monospace;
 }
 
-/* CARD */
+*{box-sizing: border-box;}
+/* CARD - COMMENTS*/
 .card{
   padding: 1em;
-  border: solid #888 solid 3px;
-  width: 200px;
+  width: 90%;
   text-align: center;
   margin: 1em;
   border-radius: 10px;
   transition: ease-in-out 100ms;
-  background-color: aliceblue;
 }
-.card:hover{
-  box-shadow: 0px 0px 10px 1px gray;
-  transform: scale(1.01);
-}
+
 .content{
   font-size: 1.1em;
   font-weight: 900;
@@ -39,4 +35,27 @@ code {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
+}
+
+/* USER FEEDBACK.JS */
+.feedbackcard{
+  width: 300px;
+  border: #888 solid 1px;
+  border-radius: 10px;
+  text-align: center;
+  overflow: hidden;
+}
+.cardfooter{
+  background-color: #888;
+  padding: 0.2em;
+  color: aliceblue;
+}
+.feedbackcontainer:hover{
+  box-shadow: 0px 0px 10px 1px gray;
+  transform: scale(1.01);
+  overflow: hidden;
+  border-radius: 10px;
+}
+.feedbackcontainer{
+  margin: 1%;
 }
