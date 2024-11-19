@@ -1,0 +1,42 @@
+*{box-sizing: border-box;}
+html{scroll-behavior: smooth;}
+img{width: 100%; display: block;}
+.imgcontainer{
+  width: 80%;
+  margin: 5em auto;
+  box-shadow: 1px 1px 5px gray;
+}
+.title{text-align: center; margin: 3em;}
+/*NAVBARS*/
+.navbar{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.navbar div:nth-child(1){
+  width: 30%;
+}
+.navbar div:nth-child(2){
+  width: 70%;
+}
+.btngroup{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.btngroup button{
+  width: 33%;
+  text-align: center;
+  padding: 1em;
+  border: none;
+
+}
+.btngroup button Link{
+  color: whitesmoke;
+}
+.btngroup button:hover{
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: crimson;
+  cursor: pointer;
+}
