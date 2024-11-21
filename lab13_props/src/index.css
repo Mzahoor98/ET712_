@@ -59,3 +59,62 @@ code {
 .feedbackcontainer{
   margin: 1%;
 }
+.cardfooter:hover{
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+/* Modal WIndow*/
+.modalwindow{
+  background-color: rgba(200, 200, 200, 0.5);
+  position: fixed;
+  top: 0%;bottom: 0%;right: 0%;left: 0%;
+  display: none;
+}
+.modalcontent{
+  width: 500px;
+  height: 300px;
+  margin: 100px auto;
+  background-color: white;
+}
+.modalheader{
+  border-bottom: ridge 1px lightgray;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.1em 2em;
+  color: #888;
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.closemodal{
+  margin-left: auto;
+}
+.closemodal:hover{
+  cursor: pointer;
+  color: crimson;
+}
+.description_comment{
+  margin-left: 2.5em;
+  margin-top: -20px;
+  color: crimson;
+  font-size: 0.7em;
+}
+.commentarea{
+  margin: 2em;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+}
+.btnpostfeedback{
+  margin: 2em;
+  background-color: #888;
+  text-align: center;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+}
+.btnpostfeedback:hover{
+  background-color: crimson;
+  cursor: pointer;
+}
