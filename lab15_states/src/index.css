@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title{ text-align: center;}
+/*SLICE APP*/
+.slicewrapper{
+  width: 600px;
+  margin: 20px auto;
+  box-shadow: 1px 1px 5px lightgray;
+  padding: 20px;
+}
+.numberwrapper{
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  background-color: lightblue;
+  color: white;
+}
+.numberwrapper > div{
+  border: solid gray 1px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 10%;
+}
+.btngroup{
+  display: flex;
+  justify-content: space-evenly ;
+  margin-bottom: 30px;
+}
+.btngroup > button:hover{
+  background-color: darkblue;
+  box-shadow: 1px 1px 5px gray;
+  font-weight: bolder;
+}
+.btngroup > button{
+  width: 30%;
+  background-color: orangered;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+.active{
+  background-color: orangered;
+  box-shadow: 0px 0px 5px 1px gray;
+}
+.msg{
+  text-align: center;
+  font-weight: bolder;
+}
