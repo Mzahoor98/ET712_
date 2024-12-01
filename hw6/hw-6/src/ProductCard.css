@@ -1,0 +1,85 @@
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 200px; 
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .product-name {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .product-price {
+    font-size: 16px;
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .availability {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .in-stock {
+    color: #28a745;
+  }
+  
+  .out-of-stock {
+    color: #dc3545;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .product-card {
+      width: 150px; 
+      padding: 10px;
+    }
+  
+    .product-name {
+      font-size: 16px;
+    }
+  
+    .product-price {
+      font-size: 14px;
+    }
+  
+    .availability {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-card {
+      width: 90%; 
+    }
+  
+    .product-name {
+      font-size: 14px;
+    }
+  
+    .product-price {
+      font-size: 12px;
+    }
+  
+    .availability {
+      font-size: 10px;
+    }
+  }
+  
