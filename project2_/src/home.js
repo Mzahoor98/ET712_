@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <div className="cars-page">
       <p>Cars are more than just vehicles. They represent speed, luxury, and innovation.
-          At Everything Cars Dealership, we bring you a curated collection of cars
+          At Everything Cars, we bring you a curated collection of cars
           designed to satisfy your need for thrill, comfort, and sustainability.
           Explore our range and find the perfect car that matches your lifestyle.</p>
       
