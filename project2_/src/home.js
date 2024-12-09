@@ -23,9 +23,14 @@ const Home = () => {
       link: "/eco-friendly-cars",
     },
   ];
+  
 
   return (
     <div className="cars-page">
+      <p>Cars are more than just vehicles. They represent speed, luxury, and innovation.
+          At Everything Cars Dealership, we bring you a curated collection of cars
+          designed to satisfy your need for thrill, comfort, and sustainability.
+          Explore our range and find the perfect car that matches your lifestyle.</p>
       
       <div className="car-gallery">
         {cars.map((car, index) => (
