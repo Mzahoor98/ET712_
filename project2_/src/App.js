@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <h1>Everything Cars Dealership</h1>
+          <h1>Everything Cars</h1>
           <p>Discover Fast, Luxurious, and Eco-Friendly Cars!</p>
         </header>
         <main>

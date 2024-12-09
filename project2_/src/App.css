@@ -122,3 +122,23 @@ p {
 .category-link:hover {
   background-color: #45a049;
 }
+
+
+header {
+    background: linear-gradient(90deg, #1a1a1a, #4d4d4d);
+    color: white;
+    padding: 30px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+header h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    font-size: 0.9rem;
+    border-top: 2px solid #ff9900;
+}
