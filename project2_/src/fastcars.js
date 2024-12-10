@@ -125,7 +125,7 @@ function FastCars() {
               &times;
             </button>
             <h1>Get a Quote!</h1>
-            <h2>Request a Quote</h2>
+            
             <form>
               <div className="form-group">
                 <label htmlFor="name">Name:</label>
