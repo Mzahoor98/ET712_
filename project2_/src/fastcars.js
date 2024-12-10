@@ -80,10 +80,19 @@ const cars = [
 
 function FastCars() {
   const [modalData, setModalData] = useState(null);
+  const [quoteModalOpen, setQuoteModalOpen] = useState(false);
+
+  const handleRequestQuote = () => {
+    setQuoteModalOpen(true);
+  };
+
+  const handleCloseQuoteModal = () => {
+    setQuoteModalOpen(false);
+  };
 
   return (
     <div className="cars-page">
-      <Link to="/" className="back-link">Back to Home</Link> 
+      <Link to="/" className="back-link">Back to Home</Link>
       <h2>Fast Cars</h2>
       <p>Experience the thrill of speed with these high-performance machines.</p>
       <div className="car-gallery">
@@ -103,6 +112,48 @@ function FastCars() {
           data={modalData}
           onClose={() => setModalData(null)}
         />
+      )}
+      <div className="quote-section">
+        <button className="quote-button" onClick={handleRequestQuote}>
+          Request a Quote
+        </button>
+      </div>
+      {quoteModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <button className="close-button" onClick={handleCloseQuoteModal}>
+              &times;
+            </button>
+            <h1>Get a Quote!</h1>
+            <h2>Request a Quote</h2>
+            <form>
+              <div className="form-group">
+                <label htmlFor="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" />
+              </div>
+              <div className="form-group">
+                <label htmlFor="car">Interested Car:</label>
+                <select id="car" name="car">
+                  {cars.map((car, index) => (
+                    <option key={index} value={car.name}>
+                      {car.name}
+                    </option>
+                  ))}
+                </select>
+              </div>
+              <button type="submit" className="submit-button">
+                Submit
+              </button>
+              <button type="button" className="close-modal-button" onClick={handleCloseQuoteModal}>
+                Close
+              </button>
+            </form>
+          </div>
+        </div>
       )}
     </div>
   );
