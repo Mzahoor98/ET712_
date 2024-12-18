@@ -1,0 +1,108 @@
+/* Contact Page Container */
+.contact-container {
+    background-image: url("/src/Images/yeezy-contactuspage.jpg"); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole screen */
+    background-position: center; /* Centers the image */
+    background-attachment: fixed; /* Optional parallax effect */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
+    color: #fff; /* White text for contrast */
+    min-height: 100vh; /* Full-page height */
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    padding: 50px 20px; /* Adds padding to the container */
+    position: relative; /* Required for overlay */
+    box-sizing: border-box; /* Ensures consistent padding */
+  }
+  
+  /* Overlay for Readability */
+  .contact-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1; /* Ensures it appears below the form */
+  }
+  
+  .contact-container > * {
+    position: relative;
+    z-index: 2; /* Ensures the content is above the overlay */
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    background: rgba(255, 255, 255, 0.9); /* Light transparent background for the form */
+    color: #333; /* Dark text for contrast */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px; /* Limits the form's width */
+    width: 100%; /* Ensures it is responsive */
+    box-sizing: border-box; /* Ensures consistent padding and border */
+    text-align: left; /* Aligns form content to the left */
+  }
+  
+  /* Form Heading */
+  .contact-form h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #f9d342; /* Golden color */
+    text-align: center; /* Center the heading text */
+  }
+  
+  /* Paragraph in Form */
+  .contact-form p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center; /* Center the paragraph text */
+  }
+  
+  /* Form Groups */
+  .contact-form .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .contact-form .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form .form-group input,
+  .contact-form .form-group textarea {
+    width: 100%; /* Full width for input fields */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  
+  .contact-form .form-group input:focus,
+  .contact-form .form-group textarea:focus {
+    outline: none;
+    border-color: #f9d342; /* Highlight border color on focus */
+  }
+  
+  /* Submit Button */
+  .contact-form .submit-btn {
+    background-color: #f9d342; /* Golden background */
+    color: #222; /* Dark text color */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 20px auto 0; /* Centers the button horizontally */
+  }
+  
+  .contact-form .submit-btn:hover {
+    background-color: #ffc107; /* Lighter golden hover effect */
+  }
+  
